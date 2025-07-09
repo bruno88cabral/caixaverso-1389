@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela com Colspan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: darkslategrey;
+      padding: 2rem;
+      color: lightslategrey;
+    }
+
+    h1 {
+      text-align: center;
+      color: lightcyan;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 2rem auto;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid darkgray;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    th {
+      background-color: darkslategrey;
+      color: white;
+    }
+
+    td[colspan] {
+      background-color: linen;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Agenda da Semana</h1>
+
+  <table>
+    <tr>
+      <th>Dia</th>
+      <th>09:00</th>
+      <th>10:00</th>
+      <th>11:00</th>
+      <th>12:00</th>
+    </tr>
+    <tr>
+      <td>Segunda</td>
+      <td colspan="2">Reunião com equipe</td>
+      <td>Almoço livre</td>
+      <td>Check-ins</td>
+    </tr>
+    <tr>
+      <td>Terça</td>
+      <td>Emails</td>
+      <td>Planejamento</td>
+      <td colspan="2">Apresentação para diretoria</td>
+    </tr>
+    <tr>
+      <td>Quarta</td>
+      <td colspan="4">Treinamento externo (manhã inteira)</td>
+    </tr>
+  </table>
+</body>
+</html>
