@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <form>
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        minlength="5"
+        maxlength="30"
+        autocomplete="false"
+        autofocus
+      />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" autofocus required />
+      <br /><br />
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required />
+      <br /><br />
+
+      <label for="data-nascimento">Data de Nascimento:</label>
+      <input type="date" id="data-nascimento" name="data-nascimento" />
+      <br /><br />
+
+      <label for="genero">Gênero:</label>
+      <select id="genero" name="genero">
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+      <br /><br />
+
+      <fieldset>
+        <legend>Notificacoes</legend>
+        <div>
+          <label for="notificacao">Sim</label>
+          <input
+            type="radio"
+            id="notificacao"
+            name="notificacao"
+            value="sim"
+            checked
+          />
+        </div>
+        <div>
+          <label for="notificacao">Não</label>
+          <input type="radio" id="notificacao" name="notificacao" value="nao" />
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="termos">Aceito os termos e condições</label>
+        <input
+          type="checkbox"
+          id="termos"
+          name="termos"
+          value="aceito"
+          required
+          checked
+        />
+      </div>
+
+      <div>
+        <label for="newsletter">Desejo receber a newsletter</label>
+        <input
+          type="checkbox"
+          id="newsletter"
+          name="newsletter"
+          value="sim"
+          checked
+        />
+        <br /><br />
+      </div>
+
+      <button type="submit" id="submit" disabled>Enviar</button>
+      <button type="reset">Reset</button>
+      <br /><br />
+    </form>
+  </body>
+</html>

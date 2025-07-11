@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="POST" target="_blank">
+      <label for="nome">Nome (obrigatório):</label><br />
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
+      <label for="idade">Idade (maior de 18 anos):</label><br />
+      <input
+        type="number"
+        id="idade"
+        name="idade"
+        min="18"
+        required
+      /><br /><br />
+
+      <label for="telefone">Telefone (formato: 11-9999-9999):</label><br />
+      <input
+        type="tel"
+        id="telefone"
+        name="telefone"
+        pattern="[0-9]{2}-[9]{1}[0-9]{3}-[0-9]{4}"
+        required
+      />
+      <small>Formato: 11-9999-9999</small><br /><br />
+
+      <label>Gênero:</label><br />
+      <input type="radio" id="masculino" name="genero" value="Masculino" />
+      <label for="masculino">Masculino</label><br />
+      <input type="radio" id="feminino" name="genero" value="Feminino" />
+      <label for="feminino">Feminino</label><br /><br />
+
+      <label for="dataNascimento">Data de Nascimento (entre 1900 e 2005):</label
+      ><br />
+      <input
+        type="date"
+        id="dataNascimento"
+        name="dataNascimento"
+        min="1900-01-01"
+        max="2005-01-01"
+        required
+      /><br /><br />
+
+      <label for="horario">Horário de Atendimento (07:00 às 17:00):</label
+      ><br />
+      <input
+        type="time"
+        id="horario"
+        name="horario"
+        min="07:00"
+        max="17:00"
+        required
+      /><br /><br />
+
+      <label for="hobbies">Hobbies (selecione ao menos um):</label><br />
+      <select id="hobbies" name="hobbies" multiple size="7" required>
+        <option value="leitura">Leitura</option>
+        <option value="esportes">Esportes</option>
+        <option value="musica">Música</option>
+        <option value="cinema">Cinema</option>
+        <option value="viagem">Viagem</option>
+        <option value="cozinhar">Cozinhar</option>
+        <option value="fotografia">Fotografia</option></select
+      ><br /><br />
+
+      <label for="cor">Cor Preferida:</label><br />
+      <select id="cor" name="cor" required>
+        <option value="">Selecione uma cor</option>
+        <option value="vermelho">Vermelho</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="amarelo">Amarelo</option>
+        <option value="roxo">Roxo</option>
+        <option value="laranja">Laranja</option>
+        <option value="preto">Preto</option></select
+      ><br /><br />
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </body>
+</html>

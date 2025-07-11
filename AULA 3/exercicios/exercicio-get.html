@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="https://www.themealdb.com/api/json/v1/1/filter.php"
+      method="GET"
+      target="_blank"
+    >
+      <label
+        >Categoria:
+        <select name="c">
+          <option value="">-- Selecione --</option>
+          <option value="Seafood">Seafood</option>
+          <option value="Beef">Beef</option>
+          <option value="Vegetarian">Vegetarian</option>
+        </select> </label
+      ><br />
+
+      <label
+        >Região:
+        <select name="a">
+          <option value="">-- Selecione --</option>
+          <option value="Italian">Italian</option>
+          <option value="Mexican">Mexican</option>
+          <option value="Japanese">Japanese</option>
+        </select> </label
+      ><br />
+
+      <button type="submit">Buscar Receitas</button>
+    </form>
+  </body>
+</html>
