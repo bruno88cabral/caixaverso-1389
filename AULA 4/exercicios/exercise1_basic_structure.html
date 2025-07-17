@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 1 - Estrutura Básica</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    nav {
+      background: #333;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    footer {
+      background: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+    figure {
+      margin: 20px 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <main>
+    <section>
+      <article>
+        <h2>Meu Primeiro Artigo</h2>
+        <p>Este é um parágrafo de exemplo dentro do artigo principal da página.</p>
+      </article>
+
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mountain_Panorama.jpg/800px-Mountain_Panorama.jpg" alt="Paisagem de montanha ao pôr do sol">
+        <figcaption>Pôr do sol sobre as montanhas</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 - Todos os direitos reservados
+  </footer>
+</body>
+</html>

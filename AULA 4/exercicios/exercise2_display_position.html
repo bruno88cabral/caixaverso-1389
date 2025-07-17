@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2 - Display e Position</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #222;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      z-index: 1000;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      margin-top: 60px;
+      min-height: calc(100vh - 60px - 50px);
+    }
+    aside {
+      width: 25%;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    section {
+      width: 75%;
+      padding: 20px;
+      background: #e3e3e3;
+    }
+    footer {
+      height: 50px;
+      background: #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+    body > footer {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <nav>Menu fixo</nav>
+  <main>
+    <aside>Conteúdo lateral</aside>
+    <section>Conteúdo principal</section>
+  </main>
+  <footer>Rodapé</footer>
+</body>
+</html>

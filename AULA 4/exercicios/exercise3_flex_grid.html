@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 3 - Flex e Grid</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 60px 1fr 50px;
+      height: 100vh;
+      gap: 10px;
+    }
+
+    header {
+      grid-area: header;
+      background: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      grid-area: nav;
+      background: #e2e2e2;
+      padding: 20px;
+    }
+
+    main {
+      grid-area: main;
+      background: #f0f0f0;
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      background: white;
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    aside {
+      background: #dedede;
+      padding: 10px;
+    }
+
+    footer {
+      grid-area: footer;
+      background: #ccc;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header>Header</header>
+    <nav>Menu lateral</nav>
+    <main>
+      <div class="box">Artigo 1</div>
+      <div class="box">Artigo 2</div>
+    </main>
+    <footer>Rodapé</footer>
+  </div>
+</body>
+</html>
