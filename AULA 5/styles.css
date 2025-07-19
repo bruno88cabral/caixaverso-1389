@@ -1,0 +1,15 @@
+* {
+  --breakpoint-xs: 400px;
+  --breakpoint-sm: 600px;
+  --red: #ff0000;
+}
+
+h2 {
+  color: var(--red);
+}
+
+@media (min-width: var(--breakpoint-xs)) and (max-width: var(--breakpoint-sm)) {
+  h2 {
+    font-size: 40px;
+  }
+}
