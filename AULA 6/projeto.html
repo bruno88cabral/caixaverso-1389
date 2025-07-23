@@ -1,0 +1,351 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caixa - Plataforma Renovada</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #004aad;
+        color: white;
+        padding: 20px;
+      }
+
+      .flex-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      h1 {
+        margin-bottom: 24px;
+        font-size: 36px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .home {
+        background-color: #e0f0ff;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .home p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+
+      .catalogo {
+        padding: 40px 20px;
+        background-color: #f8f8f8;
+      }
+
+      .catalogo h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        color: #004aad;
+      }
+
+      .tabela-taxas {
+        padding: 40px 20px;
+      }
+
+      .tabela-taxas h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #004aad;
+        color: white;
+      }
+
+      .contato {
+        padding: 40px 20px;
+        background-color: #f1f1f1;
+      }
+
+      .contato h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #004aad;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+      }
+
+      footer {
+        background-color: #002f6c;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      footer nav a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+      }
+
+      @media (max-width: 900px) {
+        .cards {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .cards {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav {
+          margin-top: 10px;
+        }
+
+        ul {
+          flex-direction: column;
+        }
+
+        .flex-header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="flex-header container">
+        <span>Logo aqui</span>
+
+        <nav>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#taxas">Taxas</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#taxas">Taxas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="home">
+      <div class="container">
+        <h1>Plataforma Caixa</h1>
+        <h2>Bem-vindo à nova plataforma da Caixa</h2>
+        <p>
+          Quem tem conta na Caixa pode contar com financiamento rápido, fácil e
+          sem burocracia. Quem tem conta na Caixa pode contar com financiamento
+          rápido, fácil e sem burocracia. Quem tem conta na Caixa pode contar
+          com financiamento rápido, fácil e sem burocracia. Quem tem conta na
+          Caixa pode contar com financiamento rápido, fácil e sem burocracia.
+          Quem tem conta na Caixa pode contar com financiamento rápido, fácil e
+          sem burocracia.
+        </p>
+      </div>
+    </section>
+
+    <section id="produtos" class="catalogo">
+      <div class="container">
+        <h2>Catálogo de Produtos e Serviços</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Abertura de Conta</h3>
+            <p>
+              Corrente, Poupança e Digital para movimentar dinheiro, pagar
+              contas e receber benefícios.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Empréstimos e Financiamentos</h3>
+            <p>Crédito pessoal, consignado, habitacional e para veículos.</p>
+          </div>
+          <div class="card">
+            <h3>Cartões de Débito e Crédito</h3>
+            <p>
+              Cartões com ou sem anuidade para compras à vista ou parceladas.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Investimentos</h3>
+            <p>
+              Poupança, CDB, LCI/LCA e Fundos para todos os perfis de clientes.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Seguros</h3>
+            <p>Proteção para vida, residência, veículos e crédito.</p>
+          </div>
+          <div class="card">
+            <h3>Previdência Privada</h3>
+            <p>Planos para aposentadoria com benefícios fiscais.</p>
+          </div>
+          <div class="card">
+            <h3>Pagamentos e Recebimentos</h3>
+            <p>
+              Pagamentos de contas, tributos, recargas e recebimento de
+              salários.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Benefícios Sociais</h3>
+            <p>
+              Atendimento ao Bolsa Família, FGTS, PIS, INSS, Seguro-Desemprego e
+              mais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="taxas" class="tabela-taxas container">
+      <h2>Tabela de Taxas - Empréstimo Pessoal</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mês (ano/mês)</th>
+            <th>Empréstimo Pessoal</th>
+            <th>Cheque Especial</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fevereiro/2025</td>
+            <td>6,29 % ao mês</td>
+            <td>8,00 % ao mês</td>
+          </tr>
+          <tr>
+            <td>Abril/2025</td>
+            <td>6,60 % ao mês</td>
+            <td>8,00 % ao mês</td>
+          </tr>
+          <tr>
+            <td>Maio/2025</td>
+            <td>6,86 % ao mês</td>
+            <td>8,00 % ao mês</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Fale Conosco</h2>
+        <form action="https://httpbin.org/post" method="POST" target="_blank">
+          <input type="text" name="nome" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <textarea
+            name="mensagem"
+            rows="5"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Nova Caixa Econômica Federal</p>
+        <nav>
+          <a href="#home">Início</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#taxas">Taxas</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
